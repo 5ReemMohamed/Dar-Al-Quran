@@ -1,0 +1,293 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+  scroll-padding-top: 70px;
+}
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 81, 63,.9),rgba(8, 81, 63,.6)),url(../imgs/header2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 100px;
+  z-index: 1000;
+}
+.hero-section .inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 400px;
+}
+.padding{
+  padding: 100px 0px;
+}
+.hero-navbar {
+  background-color: #fff; 
+  color: #373737;
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn-main{
+  position: relative;
+    background-color: #db9e30;
+    border: 1px solid #db9e30;
+    padding: 17px 12px;
+    color: white;
+    border-radius: 40px;
+    transition: all 0.5s ease-in-out;
+    font-size: 14px !important;
+    z-index: 0;
+}
+.btn-main:hover{
+  background-color: white;
+  color: #db9e30;
+  border: 1px solid #db9e30;
+  opacity: 1;
+}
+.btn-main:hover::before{
+    top: 0px;
+  left: 0px; 
+  background-color: white;
+  opacity: 1;
+}
+
+.btn-main::before{
+    content: "";
+    position: absolute;
+    background-color: #db9e30;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 40px;
+    top: 8px;
+    left: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link{
+  color:#373737 !important;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #db9e30 !important;
+}
+.navbar-toggler  {
+    border: none;
+}
+.navbar-toggler i{
+ color: #373737 !important;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none;
+}
+.navbar-brand{
+  font-size: 30px;
+}
+.navbar-toggler{
+  color: white !important; ;
+}
+h1{
+  font-size: 30px;
+}
+#home p{
+  font-size: 16px;
+}
+
+
+.tq-logo {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  max-width: 100px;
+  z-index: 1040;
+}
+
+.logo-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about{
+  background-color: #f7f5f2;
+  overflow: hidden;
+}
+
+.text-olive{
+  color: #004b39;
+}
+
+
+.prayer-cards {
+  margin-top: 2rem;
+}
+
+.prayer-card{
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  background: #fff5d7;
+  clip-path: path('M0,500 L0,200 Q0,140 75,140 A75,75 0 1 1 225,140 Q300,140 300,200 L300,500 Z');
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
+  color: black;
+  text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.prayer-card:hover{
+ background-color: #db9e30;
+ transform: translateY(-8px);
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+ cursor: pointer;
+}
+ 
+.prayer-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #db9e30;
+}
+.prayer-card .icon i{
+  color: #db9e30;
+}
+.prayer-card:hover .icon{
+  border: 1px solid #fff;
+}
+.prayer-card:hover .icon i{
+  color: #fff;
+}
+.prayer-card .text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+}
+
+.prayer-card p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #2a2a2a;
+}
+.parts-logo-svg{
+  transform: rotate(180deg);
+}
+.parts{
+  background-color: #f7f5f2; ;
+}
+
+main ul li{
+  list-style-type: circle;
+}
+.info p{
+  border: 1px solid #db9e30;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.info p:hover{
+  background-color: #db9e30;
+  color: white;
+  cursor: pointer;
+}
+img{
+  border-radius: 20px;
+}
+ .contact{
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+ }
+.contact a {
+  display: inline-block;
+  margin: 0.5rem 1rem 0.5rem 0;
+  text-decoration: none;
+  background: #db9e30;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+footer{
+  background-color:#004b39 ;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+ .GMT{
+  max-height: 100px; 
+  object-fit: cover;
+ }
+ footer a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+ }
+ .fixed-top-button{
+   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1050;
+ }
+ .scroll-top{
+   width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #004b39; 
+  border: 1px solid #004b39;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+ }
+@media (min-width: 992px){
+  .hero-section .inner{
+    padding-top: 600px;
+}
+.tq-logo {
+  left: 250px;
+}
+.logo-svg {
+  width: 200%;
+}
+h1{
+  font-size: 55px;
+}
+#home p{
+  font-size: 20px;
+}
+
+.btn-main{
+    padding: 16px 40px;
+     font-size: 18px !important;
+}
+
+}
+
+
