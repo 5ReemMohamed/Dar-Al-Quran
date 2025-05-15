@@ -251,7 +251,7 @@ footer{
   gap: 15px;
   z-index: 1050;
  }
- .scroll-top{
+ .scroll-top,.whatsapp-button{
    width: 50px;
   height: 50px;
   border-radius: 50%;
