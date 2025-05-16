@@ -1,3 +1,32 @@
+
+@font-face {
+  font-family: 'HeadingFont';
+  src: url('../fonts/KFGQPC-KufiExtV14.ttf') ;
+}
+@font-face {
+  font-family: 'basicfont';
+  src: url('../fonts/decotype-thuluth-ii.ttf') ;
+}
+
+h1{
+  font-size: 60px;
+  font-family: "HeadingFont", serif;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: "HeadingFont", serif;
+}
+@media screen and (min-width: 437px) {
+h1,h2,h3,h4,h5,h6{
+  font-size: 60px;
+}
+h1{
+  font-size: 70px;
+}
+h3{
+  font-size: 50px;
+}
+}
+
 *{
 margin: 0;
 padding: 0;
@@ -6,6 +35,9 @@ box-sizing: border-box;
 
 html{
   scroll-padding-top: 70px;
+}
+body{
+  font-family:"Amiri", serif;
 }
 .hero-section {
   position: relative;
@@ -75,6 +107,7 @@ html{
 }
 .nav-link{
   color:#373737 !important;
+  font-size: 20px;
 }
 .nav-link.active {
   font-weight: bold;
@@ -91,17 +124,16 @@ html{
     outline: 0;
     box-shadow:none;
 }
-.navbar-brand{
-  font-size: 30px;
-}
 .navbar-toggler{
   color: white !important; ;
 }
-h1{
-  font-size: 30px;
+p{
+  color: black;
+  font-size: 22px;
 }
 #home p{
-  font-size: 16px;
+  font-size: 22px;
+  color: white;
 }
 
 
@@ -177,13 +209,11 @@ h1{
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #2a2a2a;
 }
 
 .prayer-card p {
   font-size: 1.2rem;
   margin: 0;
-  color: #2a2a2a;
 }
 .parts-logo-svg{
   transform: rotate(180deg);
@@ -194,7 +224,10 @@ h1{
 
 main ul li{
   list-style-type: circle;
+  color: black;
+  font-size: 17px;
 }
+
 .info p{
   border: 1px solid #db9e30;
   display: inline-block;
@@ -276,9 +309,6 @@ footer{
 .logo-svg {
   width: 200%;
 }
-h1{
-  font-size: 55px;
-}
 #home p{
   font-size: 20px;
 }
@@ -287,7 +317,9 @@ h1{
     padding: 16px 40px;
      font-size: 18px !important;
 }
-
+h1{
+  font-size: 100px;
+}
 }
 
 
